@@ -1,4 +1,6 @@
 spring:
+  main:
+    allow-circular-references: true
   kafka:
     bootstrap-servers: breisen.datamix.ovh:9093
     listener:

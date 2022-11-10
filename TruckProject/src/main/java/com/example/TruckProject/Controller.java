@@ -20,7 +20,7 @@ public class Controller {
     }
 
     @RequestMapping("/{id}/map")
-    public RedirectView localRedirect() {
+    public RedirectView localRedirect(@PathVariable int id) {
         RedirectView redirectView = new RedirectView();
         String url = serviceTruck.getUrlById(id);
         redirectView.setUrl(url);
